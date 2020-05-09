@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{21085900-E13C-45C2-B190-D7DDC158948B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>main</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Accipiter.h" />
+    <ClInclude Include="Accipiter_gundlachi.h" />
+    <ClInclude Include="Accipiter_nisus.h" />
+    <ClInclude Include="Accipiter_striatus.h" />
+    <ClInclude Include="Accipitridae.h" />
+    <ClInclude Include="Accipitrinae.h" />
+    <ClInclude Include="Anseriformes.h" />
+    <ClInclude Include="Apterygiformes.h" />
+    <ClInclude Include="Apteryx_australis.h" />
+    <ClInclude Include="Apteryx_owenii.h" />
+    <ClInclude Include="Aquila.h" />
+    <ClInclude Include="Aquila_chrysaetos.h" />
+    <ClInclude Include="Aquila_nipalensis.h" />
+    <ClInclude Include="Aquilinae.h" />
+    <ClInclude Include="Aves.h" />
+    <ClInclude Include="Campephilini.h" />
+    <ClInclude Include="Campephilus.h" />
+    <ClInclude Include="Campephilus_imperialis.h" />
+    <ClInclude Include="Campephilus_principalis.h" />
+    <ClInclude Include="Casuariiformes.h" />
+    <ClInclude Include="Casuarius.h" />
+    <ClInclude Include="colla.h" />
+    <ClInclude Include="collb.h" />
+    <ClInclude Include="Columbiformes.h" />
+    <ClInclude Include="Cuculiformes.h" />
+    <ClInclude Include="Diomedea_amsterdamensis.h" />
+    <ClInclude Include="Diomedea_epomophora.h" />
+    <ClInclude Include="Diomedea_exulans.h" />
+    <ClInclude Include="Diomedeidae.h" />
+    <ClInclude Include="Dromaius_novaehollandiae.h" />
+    <ClInclude Include="Dryocopus javensis.h" />
+    <ClInclude Include="Dryocopus.h" />
+    <ClInclude Include="Falco.h" />
+    <ClInclude Include="Falconidae.h" />
+    <ClInclude Include="Falconiformes.h" />
+    <ClInclude Include="Falco_berigora.h" />
+    <ClInclude Include="Falco_peregrinus.h" />
+    <ClInclude Include="Falco_rusticolus.h" />
+    <ClInclude Include="Fly.h" />
+    <ClInclude Include="Fulmarinae.h" />
+    <ClInclude Include="Fulmarus.h" />
+    <ClInclude Include="Galliformes.h" />
+    <ClInclude Include="Gyps.h" />
+    <ClInclude Include="Gyps_africanus.h" />
+    <ClInclude Include="Gyps_fulvus.h" />
+    <ClInclude Include="Gyps_himalayensis.h" />
+    <ClInclude Include="Ictinaetus.h" />
+    <ClInclude Include="Megalaima.h" />
+    <ClInclude Include="Megalaimidae.h" />
+    <ClInclude Include="Neognathae.h" />
+    <ClInclude Include="Palaeognathae.h" />
+    <ClInclude Include="Passeriformes.h" />
+    <ClInclude Include="Phalcoboenus.h" />
+    <ClInclude Include="Piciformes.h" />
+    <ClInclude Include="Picinae.h" />
+    <ClInclude Include="Picini.h" />
+    <ClInclude Include="Procellarae.h" />
+    <ClInclude Include="Procellaria.h" />
+    <ClInclude Include="Procellariidae.h" />
+    <ClInclude Include="Procellariiformes.h" />
+    <ClInclude Include="Procellarioidea.h" />
+    <ClInclude Include="Pterodroma.h" />
+    <ClInclude Include="Pterodroma_cahow.h" />
+    <ClInclude Include="Pterodroma_hasitata.h" />
+    <ClInclude Include="Pterodroma_hypoleuca.h" />
+    <ClInclude Include="Puffininae.h" />
+    <ClInclude Include="Puffinus.h" />
+    <ClInclude Include="Puffinus_griseus.h" />
+    <ClInclude Include="Puffinus_tenuirostris.h" />
+    <ClInclude Include="Rhea americana.h" />
+    <ClInclude Include="Rhea_pennata.h" />
+    <ClInclude Include="Rheiformes.h" />
+    <ClInclude Include="Sarcogyps.h" />
+    <ClInclude Include="Semnornis frantzii.h" />
+    <ClInclude Include="Semnornis ramphastinus.h" />
+    <ClInclude Include="Semnornithidae.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Striges.h" />
+    <ClInclude Include="Struthioniformes.h" />
+    <ClInclude Include="Struthio_Camelus.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Accipiter.cpp" />
+    <ClCompile Include="Accipiter_gundlachi.cpp" />
+    <ClCompile Include="Accipiter_nisus.cpp" />
+    <ClCompile Include="Accipiter_striatus.cpp" />
+    <ClCompile Include="Accipitridae.cpp" />
+    <ClCompile Include="Accipitrinae.cpp" />
+    <ClCompile Include="Anseriformes.cpp" />
+    <ClCompile Include="Apterygiformes.cpp" />
+    <ClCompile Include="Apteryx_australis.cpp" />
+    <ClCompile Include="Apteryx_owenii.cpp" />
+    <ClCompile Include="Aquila.cpp" />
+    <ClCompile Include="Aquila_chrysaetos.cpp" />
+    <ClCompile Include="Aquila_nipalensis.cpp" />
+    <ClCompile Include="Aquilinae.cpp" />
+    <ClCompile Include="Aves.cpp" />
+    <ClCompile Include="Campephilini.cpp" />
+    <ClCompile Include="Campephilus.cpp" />
+    <ClCompile Include="Campephilus_imperialis.cpp" />
+    <ClCompile Include="Campephilus_principalis.cpp" />
+    <ClCompile Include="Casuariiformes.cpp" />
+    <ClCompile Include="Casuarius.cpp" />
+    <ClCompile Include="Columbiformes.cpp" />
+    <ClCompile Include="Cuculiformes.cpp" />
+    <ClCompile Include="Diomedea_amsterdamensis.cpp" />
+    <ClCompile Include="Diomedea_epomophora.cpp" />
+    <ClCompile Include="Diomedea_exulans.cpp" />
+    <ClCompile Include="Diomedeidae.cpp" />
+    <ClCompile Include="Dromaius_novaehollandiae.cpp" />
+    <ClCompile Include="Dryocopus javensis.cpp" />
+    <ClCompile Include="Dryocopus.cpp" />
+    <ClCompile Include="Falco.cpp" />
+    <ClCompile Include="Falconidae.cpp" />
+    <ClCompile Include="Falconiformes.cpp" />
+    <ClCompile Include="Falco_berigora.cpp" />
+    <ClCompile Include="Falco_peregrinus.cpp" />
+    <ClCompile Include="Falco_rusticolus.cpp" />
+    <ClCompile Include="Fulmarinae.cpp" />
+    <ClCompile Include="Fulmarus.cpp" />
+    <ClCompile Include="Galliformes.cpp" />
+    <ClCompile Include="Gyps.cpp" />
+    <ClCompile Include="Gyps_africanus.cpp" />
+    <ClCompile Include="Gyps_fulvus.cpp" />
+    <ClCompile Include="Gyps_himalayensis.cpp" />
+    <ClCompile Include="Ictinaetus.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Megalaima.cpp" />
+    <ClCompile Include="Megalaimidae.cpp" />
+    <ClCompile Include="Neognathae.cpp" />
+    <ClCompile Include="Palaeognathae.cpp" />
+    <ClCompile Include="Passeriformes.cpp" />
+    <ClCompile Include="Phalcoboenus.cpp" />
+    <ClCompile Include="Piciformes.cpp" />
+    <ClCompile Include="Picinae.cpp" />
+    <ClCompile Include="Picini.cpp" />
+    <ClCompile Include="Procellarae.cpp" />
+    <ClCompile Include="Procellaria.cpp" />
+    <ClCompile Include="Procellariidae.cpp" />
+    <ClCompile Include="Procellariiformes.cpp" />
+    <ClCompile Include="Procellarioidea.cpp" />
+    <ClCompile Include="Pterodroma.cpp" />
+    <ClCompile Include="Pterodroma_cahow.cpp" />
+    <ClCompile Include="Pterodroma_hasitata.cpp" />
+    <ClCompile Include="Pterodroma_hypoleuca.cpp" />
+    <ClCompile Include="Puffininae.cpp" />
+    <ClCompile Include="Puffinus.cpp" />
+    <ClCompile Include="Puffinus_griseus.cpp" />
+    <ClCompile Include="Puffinus_tenuirostris.cpp" />
+    <ClCompile Include="Rhea americana.cpp" />
+    <ClCompile Include="Rhea_pennata.cpp" />
+    <ClCompile Include="Rheiformes.cpp" />
+    <ClCompile Include="Sarcogyps.cpp" />
+    <ClCompile Include="Semnornis frantzii.cpp" />
+    <ClCompile Include="Semnornis ramphastinus.cpp" />
+    <ClCompile Include="Semnornithidae.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Striges.cpp" />
+    <ClCompile Include="Struthioniformes.cpp" />
+    <ClCompile Include="Struthio_Camelus.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
